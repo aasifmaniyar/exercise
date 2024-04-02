@@ -1,9 +1,8 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-
+import {gittoken, url} from './constants';
 test.describe(' API test for QA Assignment: Success & cases', ()=> {
-  const gittoken = "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";
-  const url = "https://api.github.com/user"
+
   test('Get user with valid token', async ({ request }) => {
     const res = await request.get(url, {
       headers: {

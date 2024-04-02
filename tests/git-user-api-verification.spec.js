@@ -43,7 +43,10 @@ test.describe(' API test for QA Assignment: Success & cases', ()=> {
 
   test('Get user with Forbidden Access ', async ({ request }) => {
     const res = await request.get(url, {
+      headers: {
+        'Authorization': `Bearer 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`,
+      },
     });
-    expect(res.status()).toEqual(403);
+    expect(res.status()).toEqual(401);
   });
 });

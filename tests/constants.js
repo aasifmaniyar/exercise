@@ -1,2 +1,2 @@
-export const gittoken = "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";
+export const gittoken = "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";
 export const url = "https://api.github.com/user"

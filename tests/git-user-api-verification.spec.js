@@ -1,4 +1,3 @@
-// @ts-check
 import { test, expect } from '@playwright/test';
 import {gittoken, url} from './constants';
 test.describe(' API test for QA Assignment: Success & cases', ()=> {
